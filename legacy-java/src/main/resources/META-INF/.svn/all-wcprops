@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/spring-samples/!svn/ver/581/petclinic/trunk/src/main/resources/META-INF
+END
+jpa-persistence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/spring-samples/!svn/ver/219/petclinic/trunk/src/main/resources/META-INF/jpa-persistence.xml
+END
+orm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/spring-samples/!svn/ver/581/petclinic/trunk/src/main/resources/META-INF/orm.xml
+END
+aop.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/spring-samples/!svn/ver/219/petclinic/trunk/src/main/resources/META-INF/aop.xml
+END

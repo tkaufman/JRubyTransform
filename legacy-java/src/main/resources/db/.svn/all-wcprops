@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/spring-samples/!svn/ver/192/petclinic/trunk/src/main/resources/db
+END
+db_readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/spring-samples/!svn/ver/191/petclinic/trunk/src/main/resources/db/db_readme.txt
+END
+petclinic_tomcat_all.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/spring-samples/!svn/ver/186/petclinic/trunk/src/main/resources/db/petclinic_tomcat_all.xml
+END

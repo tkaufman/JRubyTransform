@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/spring-samples/!svn/ver/206/petclinic/trunk/src/main/webapp/WEB-INF/jsp
+END
+includes.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/webapp/WEB-INF/jsp/includes.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/webapp/WEB-INF/jsp/header.jsp
+END
+welcome.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/spring-samples/!svn/ver/206/petclinic/trunk/src/main/webapp/WEB-INF/jsp/welcome.jsp
+END
+uncaughtException.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/webapp/WEB-INF/jsp/uncaughtException.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/webapp/WEB-INF/jsp/footer.jsp
+END
+vets.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/webapp/WEB-INF/jsp/vets.jsp
+END
+dataAccessFailure.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/webapp/WEB-INF/jsp/dataAccessFailure.jsp
+END

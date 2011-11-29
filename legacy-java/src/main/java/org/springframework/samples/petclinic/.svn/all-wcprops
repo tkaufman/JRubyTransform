@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/spring-samples/!svn/ver/239/petclinic/trunk/src/main/java/org/springframework/samples/petclinic
+END
+Clinic.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/Clinic.java
+END
+NamedEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/NamedEntity.java
+END
+Vets.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/Vets.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/package-info.java
+END
+Person.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/Person.java
+END
+BaseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/BaseEntity.java
+END
+Pet.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/Pet.java
+END
+Owner.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/Owner.java
+END
+PetType.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/PetType.java
+END
+Specialty.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/Specialty.java
+END
+Visit.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/Visit.java
+END
+Vet.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/Vet.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/spring-samples/!svn/ver/581/petclinic/trunk/src/test/resources/org/springframework/samples/petclinic/jpa
+END
+applicationContext-openJpaAdapter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/test/resources/org/springframework/samples/petclinic/jpa/applicationContext-openJpaAdapter.xml
+END
+applicationContext-toplinkAdapter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/test/resources/org/springframework/samples/petclinic/jpa/applicationContext-toplinkAdapter.xml
+END
+applicationContext-hibernateAdapter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/test/resources/org/springframework/samples/petclinic/jpa/applicationContext-hibernateAdapter.xml
+END
+applicationContext-jpaCommon.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/spring-samples/!svn/ver/581/petclinic/trunk/src/test/resources/org/springframework/samples/petclinic/jpa/applicationContext-jpaCommon.xml
+END
+applicationContext-entityManager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/test/resources/org/springframework/samples/petclinic/jpa/applicationContext-entityManager.xml
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/spring-samples/!svn/ver/239/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/jdbc
+END
+SimpleJdbcClinicMBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/jdbc/SimpleJdbcClinicMBean.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/jdbc/package-info.java
+END
+JdbcPet.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/jdbc/JdbcPet.java
+END
+SimpleJdbcClinic.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/spring-samples/!svn/ver/239/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/jdbc/SimpleJdbcClinic.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/validation
+END
+OwnerValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/validation/OwnerValidator.java
+END
+VisitValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/validation/VisitValidator.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/validation/package-info.java
+END
+PetValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/validation/PetValidator.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/spring-samples/!svn/ver/192/petclinic/trunk/src/main/resources/db/hsqldb
+END
+initDB.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/spring-samples/!svn/ver/181/petclinic/trunk/src/main/resources/db/hsqldb/initDB.txt
+END
+populateDB.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/spring-samples/!svn/ver/181/petclinic/trunk/src/main/resources/db/hsqldb/populateDB.txt
+END

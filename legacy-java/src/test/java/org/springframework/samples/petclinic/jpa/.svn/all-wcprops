@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/spring-samples/!svn/ver/581/petclinic/trunk/src/test/java/org/springframework/samples/petclinic/jpa
+END
+AbstractJpaClinicTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/spring-samples/!svn/ver/581/petclinic/trunk/src/test/java/org/springframework/samples/petclinic/jpa/AbstractJpaClinicTests.java
+END
+OpenJpaEntityManagerClinicTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/test/java/org/springframework/samples/petclinic/jpa/OpenJpaEntityManagerClinicTests.java
+END
+EntityManagerClinicTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/test/java/org/springframework/samples/petclinic/jpa/EntityManagerClinicTests.java
+END
+HibernateEntityManagerClinicTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/test/java/org/springframework/samples/petclinic/jpa/HibernateEntityManagerClinicTests.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/spring-samples/!svn/ver/191/petclinic/trunk/src/main/resources/db/mysql
+END
+petclinic_db_setup_mysql.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/spring-samples/!svn/ver/186/petclinic/trunk/src/main/resources/db/mysql/petclinic_db_setup_mysql.txt
+END
+initDB.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/spring-samples/!svn/ver/191/petclinic/trunk/src/main/resources/db/mysql/initDB.txt
+END
+populateDB.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/spring-samples/!svn/ver/191/petclinic/trunk/src/main/resources/db/mysql/populateDB.txt
+END

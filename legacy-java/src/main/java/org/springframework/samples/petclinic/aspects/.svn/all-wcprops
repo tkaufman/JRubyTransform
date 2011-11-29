@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/spring-samples/!svn/ver/239/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/aspects
+END
+CallMonitoringAspect.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/aspects/CallMonitoringAspect.java
+END
+AbstractTraceAspect.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/spring-samples/!svn/ver/239/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/aspects/AbstractTraceAspect.java
+END
+UsageLogAspect.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/java/org/springframework/samples/petclinic/aspects/UsageLogAspect.java
+END

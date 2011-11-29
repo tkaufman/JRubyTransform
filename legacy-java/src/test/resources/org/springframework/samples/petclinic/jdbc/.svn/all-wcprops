@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/test/resources/org/springframework/samples/petclinic/jdbc
+END
+SimpleJdbcClinicTests-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/test/resources/org/springframework/samples/petclinic/jdbc/SimpleJdbcClinicTests-context.xml
+END

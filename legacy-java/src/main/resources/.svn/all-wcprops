@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/spring-samples/!svn/ver/581/petclinic/trunk/src/main/resources
+END
+messages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/resources/messages.properties
+END
+messages_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/resources/messages_en.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/resources/log4j.properties
+END
+messages_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/resources/messages_de.properties
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/spring-samples/!svn/ver/191/petclinic/trunk/src/main/resources/jdbc.properties
+END
+petclinic.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/spring-samples/!svn/ver/179/petclinic/trunk/src/main/resources/petclinic.hbm.xml
+END

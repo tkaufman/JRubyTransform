@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/spring-samples/!svn/ver/205/petclinic/trunk/src/main/webapp/WEB-INF/spring
+END
+applicationContext-dataSource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/spring-samples/!svn/ver/205/petclinic/trunk/src/main/webapp/WEB-INF/spring/applicationContext-dataSource.xml
+END
+applicationContext-jpa.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/spring-samples/!svn/ver/205/petclinic/trunk/src/main/webapp/WEB-INF/spring/applicationContext-jpa.xml
+END
+applicationContext-hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/spring-samples/!svn/ver/205/petclinic/trunk/src/main/webapp/WEB-INF/spring/applicationContext-hibernate.xml
+END
+applicationContext-jdbc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/spring-samples/!svn/ver/205/petclinic/trunk/src/main/webapp/WEB-INF/spring/applicationContext-jdbc.xml
+END
