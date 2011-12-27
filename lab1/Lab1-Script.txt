@@ -1,0 +1,33 @@
+jruby --version
+
+jirb for irb
+
+jruby -S gem install rspec
+
+Edit a file named words.rb to do the following
+
+words = "jruby through ruby to java from"
+words.split.reverse.each do |w|
+  puts w 
+end
+
+jrubyc words.rb
+
+java -cp . words #whoops no jruby jars
+
+java -cp .:/Users/toddkaufman/.rvm/rubies/jruby-1.6.5/lib/jruby.jar words
+
+Edit a file named swing_fun.rb to do some swinging
+
+setVisible or set_visible works, but set_visible is idiomatic
+
+obj.toString => obj.to_s
+obj.getClass => obj.get_class
+
+arrlist = java.util.ArrayList.new
+arrlist << 3
+arrlist << :tres
+arrlist << "3x"
+arrlist.each do |e|
+  puts e.class
+end
