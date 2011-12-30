@@ -10,8 +10,8 @@ def triangle(a,b,c)
   type.to_sym
 end
 
-class AboutTriangleProject < Test::Unit::TestCase
-  
+class AboutTriangleProject < Test::Unit::TestCase  
+
   def test_equilateral_triangles_have_equal_sides
     assert_equal :equilateral, triangle(2, 2, 2)
     assert_equal :equilateral, triangle(10, 10, 10)
