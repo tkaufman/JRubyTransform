@@ -1,9 +1,9 @@
 package com.edgecase;
 
 public class Triangle {
-    int a;
-    int b;
-    int c;
+    private int a;
+    private int b;
+    private int c;
 
     public Triangle(int _a, int _b, int _c) {
         a = _a;
@@ -12,13 +12,22 @@ public class Triangle {
     }
     
     public String classify() {
-        if ((a == b) && (b == c)) {
-            return "equilateral";
-        }
-        if ((a == b) || (b == c) || (a == c)) {
-            return "isosceles";
-        }
-        return "scalene";
+        if (equilateral()) { return "equilateral"; }
+        if (isosceles()) { return "isosceles"; }
+        if (scalene()) { return "scalene"; }
+        return "nil";
+    }
+    
+    private boolean equilateral() {
+        return ((a == b) && (b == c));
+    }
+    
+    private boolean isosceles() {
+        return ((a == b) || (b == c) || (a == c));
+    }
+    
+    private boolean scalene() {
+        return ((a != b) && (b != c) && (a != c) && (b != a));
     }
 
 }
