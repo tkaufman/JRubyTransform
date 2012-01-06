@@ -1,5 +1,0 @@
-Testsuite: org.springframework.samples.petclinic.web.VisitsAtomViewTest
-Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.018 sec
-
-Testcase: buildFeedMetadata took 0.011 sec
-Testcase: buildFeedEntries took 0.002 sec
