@@ -1,0 +1,264 @@
+Testsuite: org.springframework.samples.petclinic.jpa.EntityManagerClinicTests
+Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 1.454 sec
+------------- Standard Output ---------------
+[TopLink Config]: 2012.01.01 12:35:10.813--ServerSession(617806695)--Thread(Thread[main,5,main])--The alias name for the entity class [class org.springframework.samples.petclinic.Vet] is being defaulted to: Vet.
+[TopLink Config]: 2012.01.01 12:35:10.834--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.Integer org.springframework.samples.petclinic.BaseEntity.getId()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.841--ServerSession(617806695)--Thread(Thread[main,5,main])--The alias name for the entity class [class org.springframework.samples.petclinic.Specialty] is being defaulted to: Specialty.
+[TopLink Config]: 2012.01.01 12:35:10.842--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.Integer org.springframework.samples.petclinic.BaseEntity.getId()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.842--ServerSession(617806695)--Thread(Thread[main,5,main])--The alias name for the entity class [class org.springframework.samples.petclinic.Owner] is being defaulted to: Owner.
+[TopLink Config]: 2012.01.01 12:35:10.843--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.Integer org.springframework.samples.petclinic.BaseEntity.getId()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.843--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.String org.springframework.samples.petclinic.Owner.getAddress()] is being defaulted to: ADDRESS.
+[TopLink Config]: 2012.01.01 12:35:10.844--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.String org.springframework.samples.petclinic.Owner.getCity()] is being defaulted to: CITY.
+[TopLink Config]: 2012.01.01 12:35:10.844--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.String org.springframework.samples.petclinic.Owner.getTelephone()] is being defaulted to: TELEPHONE.
+[TopLink Config]: 2012.01.01 12:35:10.846--ServerSession(617806695)--Thread(Thread[main,5,main])--The alias name for the entity class [class org.springframework.samples.petclinic.Pet] is being defaulted to: Pet.
+[TopLink Config]: 2012.01.01 12:35:10.847--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.Integer org.springframework.samples.petclinic.BaseEntity.getId()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.853--ServerSession(617806695)--Thread(Thread[main,5,main])--The alias name for the entity class [class org.springframework.samples.petclinic.PetType] is being defaulted to: PetType.
+[TopLink Config]: 2012.01.01 12:35:10.853--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.Integer org.springframework.samples.petclinic.BaseEntity.getId()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.854--ServerSession(617806695)--Thread(Thread[main,5,main])--The alias name for the entity class [class org.springframework.samples.petclinic.Visit] is being defaulted to: Visit.
+[TopLink Config]: 2012.01.01 12:35:10.854--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.Integer org.springframework.samples.petclinic.BaseEntity.getId()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.855--ServerSession(617806695)--Thread(Thread[main,5,main])--The column name for element [public java.lang.String org.springframework.samples.petclinic.Visit.getDescription()] is being defaulted to: DESCRIPTION.
+[TopLink Config]: 2012.01.01 12:35:10.900--ServerSession(617806695)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [public org.springframework.samples.petclinic.Pet org.springframework.samples.petclinic.Visit.getPet()] is being defaulted to: class org.springframework.samples.petclinic.Pet.
+[TopLink Config]: 2012.01.01 12:35:10.905--ServerSession(617806695)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [public org.springframework.samples.petclinic.Pet org.springframework.samples.petclinic.Visit.getPet()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.905--ServerSession(617806695)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [public org.springframework.samples.petclinic.Pet org.springframework.samples.petclinic.Visit.getPet()] is being defaulted to: PET_ID.
+[TopLink Config]: 2012.01.01 12:35:10.905--ServerSession(617806695)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [public org.springframework.samples.petclinic.Owner org.springframework.samples.petclinic.Pet.getOwner()] is being defaulted to: class org.springframework.samples.petclinic.Owner.
+[TopLink Config]: 2012.01.01 12:35:10.905--ServerSession(617806695)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [public org.springframework.samples.petclinic.Owner org.springframework.samples.petclinic.Pet.getOwner()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.906--ServerSession(617806695)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [public org.springframework.samples.petclinic.Owner org.springframework.samples.petclinic.Pet.getOwner()] is being defaulted to: OWNER_ID.
+[TopLink Config]: 2012.01.01 12:35:10.906--ServerSession(617806695)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [public org.springframework.samples.petclinic.PetType org.springframework.samples.petclinic.Pet.getType()] is being defaulted to: class org.springframework.samples.petclinic.PetType.
+[TopLink Config]: 2012.01.01 12:35:10.906--ServerSession(617806695)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [public org.springframework.samples.petclinic.PetType org.springframework.samples.petclinic.Pet.getType()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.906--ServerSession(617806695)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [public org.springframework.samples.petclinic.PetType org.springframework.samples.petclinic.Pet.getType()] is being defaulted to: TYPE_ID.
+[TopLink Config]: 2012.01.01 12:35:10.909--ServerSession(617806695)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [protected java.util.Set org.springframework.samples.petclinic.Vet.getSpecialtiesInternal()] is being defaulted to: ID.
+[TopLink Config]: 2012.01.01 12:35:10.909--ServerSession(617806695)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [protected java.util.Set org.springframework.samples.petclinic.Vet.getSpecialtiesInternal()] is being defaulted to: ID.
+[TopLink Info]: 2012.01.01 12:35:11.013--ServerSession(617806695)--Thread(Thread[main,5,main])--TopLink, version: Oracle TopLink Essentials - 2.0 (Build b41-beta2 (03/30/2007))
+[TopLink Config]: 2012.01.01 12:35:11.018--ServerSession(617806695)--Connection(1528185295)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>EssentialsHSQLPlatformWithNativeSequence
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[TopLink Config]: 2012.01.01 12:35:11.027--ServerSession(617806695)--Connection(1870567471)--Thread(Thread[main,5,main])--Connected: jdbc:hsqldb:mem:petclinic
+	User: SA
+	Database: HSQL Database Engine  Version: 1.8.0
+	Driver: HSQL Database Engine Driver  Version: 1.8.0
+[TopLink Config]: 2012.01.01 12:35:11.027--ServerSession(617806695)--Connection(1614376664)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>EssentialsHSQLPlatformWithNativeSequence
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[TopLink Config]: 2012.01.01 12:35:11.027--ServerSession(617806695)--Connection(1520195650)--Thread(Thread[main,5,main])--Connected: jdbc:hsqldb:mem:petclinic
+	User: SA
+	Database: HSQL Database Engine  Version: 1.8.0
+	Driver: HSQL Database Engine Driver  Version: 1.8.0
+[TopLink Info]: 2012.01.01 12:35:11.051--ServerSession(617806695)--Thread(Thread[main,5,main])--file:/Users/toddkaufman/Projects/JRubyTransform/legacy-java/target/resources/-PetClinic login successful
+[TopLink Fine]: 2012.01.01 12:35:11.160--ClientSession(1160800030)--Connection(1824654862)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (LAST_NAME LIKE ?)
+	bind => [Schuurman%]
+[TopLink Fine]: 2012.01.01 12:35:11.174--ClientSession(1160800030)--Connection(1824654862)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (LAST_NAME LIKE ?)
+	bind => [Greenwood%]
+[TopLink Fine]: 2012.01.01 12:35:11.196--ClientSession(1548405287)--Connection(840824263)--Thread(Thread[main,5,main])--SELECT ID, LAST_NAME, FIRST_NAME FROM vets ORDER BY LAST_NAME ASC, FIRST_NAME ASC
+[TopLink Fine]: 2012.01.01 12:35:11.201--ClientSession(1548405287)--Connection(840824263)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.NAME FROM vet_specialties t0, specialties t1 WHERE ((t0.VET_ID = ?) AND (t1.ID = t0.SPECIALTY_ID))
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.202--ClientSession(1548405287)--Connection(840824263)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.NAME FROM vet_specialties t0, specialties t1 WHERE ((t0.VET_ID = ?) AND (t1.ID = t0.SPECIALTY_ID))
+	bind => [3]
+[TopLink Fine]: 2012.01.01 12:35:11.203--ClientSession(1548405287)--Connection(840824263)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.NAME FROM vet_specialties t0, specialties t1 WHERE ((t0.VET_ID = ?) AND (t1.ID = t0.SPECIALTY_ID))
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.204--ClientSession(1548405287)--Connection(840824263)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.NAME FROM vet_specialties t0, specialties t1 WHERE ((t0.VET_ID = ?) AND (t1.ID = t0.SPECIALTY_ID))
+	bind => [2]
+[TopLink Fine]: 2012.01.01 12:35:11.205--ClientSession(1548405287)--Connection(840824263)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.NAME FROM vet_specialties t0, specialties t1 WHERE ((t0.VET_ID = ?) AND (t1.ID = t0.SPECIALTY_ID))
+	bind => [4]
+[TopLink Fine]: 2012.01.01 12:35:11.206--ClientSession(1548405287)--Connection(840824263)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.NAME FROM vet_specialties t0, specialties t1 WHERE ((t0.VET_ID = ?) AND (t1.ID = t0.SPECIALTY_ID))
+	bind => [5]
+[TopLink Fine]: 2012.01.01 12:35:11.220--ClientSession(1198885077)--Connection(1969912985)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types ORDER BY NAME ASC
+[TopLink Fine]: 2012.01.01 12:35:11.225--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (LAST_NAME LIKE ?)
+	bind => [Davis%]
+[TopLink Fine]: 2012.01.01 12:35:11.226--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [2]
+[TopLink Fine]: 2012.01.01 12:35:11.226--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [2]
+[TopLink Fine]: 2012.01.01 12:35:11.227--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [2]
+[TopLink Fine]: 2012.01.01 12:35:11.228--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.229--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [4]
+[TopLink Fine]: 2012.01.01 12:35:11.229--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [5]
+[TopLink Fine]: 2012.01.01 12:35:11.230--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [4]
+[TopLink Fine]: 2012.01.01 12:35:11.230--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [3]
+[TopLink Fine]: 2012.01.01 12:35:11.237--ClientSession(17066472)--Connection(1220869853)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (LAST_NAME LIKE ?)
+	bind => [Daviss%]
+[TopLink Fine]: 2012.01.01 12:35:11.242--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.242--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.243--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.243--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.244--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.245--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [10]
+[TopLink Fine]: 2012.01.01 12:35:11.245--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [10]
+[TopLink Fine]: 2012.01.01 12:35:11.246--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [12]
+[TopLink Fine]: 2012.01.01 12:35:11.246--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [10]
+[TopLink Fine]: 2012.01.01 12:35:11.246--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [2]
+[TopLink Fine]: 2012.01.01 12:35:11.247--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [13]
+[TopLink Fine]: 2012.01.01 12:35:11.247--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [10]
+[TopLink Fine]: 2012.01.01 12:35:11.248--ClientSession(880361546)--Connection(74175792)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.252--ClientSession(1947749179)--Connection(1727220232)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (LAST_NAME LIKE ?)
+	bind => [Schultz%]
+[TopLink Fine]: 2012.01.01 12:35:11.257--ClientSession(1947749179)--Connection(1727220232)--Thread(Thread[main,5,main])--INSERT INTO owners (ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME) VALUES (?, ?, ?, ?, ?)
+	bind => [null, null, null, null, Schultz]
+[TopLink Fine]: 2012.01.01 12:35:11.258--ClientSession(1947749179)--Connection(1727220232)--Thread(Thread[main,5,main])--CALL IDENTITY()
+[TopLink Fine]: 2012.01.01 12:35:11.260--ClientSession(1947749179)--Connection(1727220232)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (LAST_NAME LIKE ?)
+	bind => [Schultz%]
+[TopLink Fine]: 2012.01.01 12:35:11.263--ClientSession(1233869427)--Connection(1541364157)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.264--ClientSession(1233869427)--Connection(1541364157)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.265--ClientSession(1233869427)--Connection(1541364157)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.265--ClientSession(1233869427)--Connection(1541364157)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.265--ClientSession(1233869427)--Connection(1541364157)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.268--ClientSession(1233869427)--Connection(1541364157)--Thread(Thread[main,5,main])--UPDATE owners SET LAST_NAME = ? WHERE (ID = ?)
+	bind => [FranklinX, 1]
+[TopLink Fine]: 2012.01.01 12:35:11.272--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types ORDER BY NAME ASC
+[TopLink Fine]: 2012.01.01 12:35:11.274--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.274--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.275--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.275--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.276--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.277--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.278--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.278--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.279--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.279--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.280--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.281--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.282--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.282--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.283--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [5]
+[TopLink Fine]: 2012.01.01 12:35:11.283--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [5]
+[TopLink Fine]: 2012.01.01 12:35:11.284--ClientSession(1868435115)--Connection(135607724)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [4]
+[TopLink Fine]: 2012.01.01 12:35:11.287--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.287--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.288--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.288--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.289--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.290--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.290--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.291--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.291--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.292--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.293--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.294--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.300--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types ORDER BY NAME ASC
+[TopLink Fine]: 2012.01.01 12:35:11.304--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--INSERT INTO pets (BIRTH_DATE, NAME, OWNER_ID, TYPE_ID) VALUES (?, ?, ?, ?)
+	bind => [2012-01-01, bowser, 6, 2]
+[TopLink Fine]: 2012.01.01 12:35:11.304--ClientSession(329849131)--Connection(1119051810)--Thread(Thread[main,5,main])--CALL IDENTITY()
+[TopLink Fine]: 2012.01.01 12:35:11.308--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.308--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.309--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.309--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.310--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.310--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.311--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.311--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.312--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.313--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.313--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.314--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.316--ClientSession(778011205)--Connection(6395852)--Thread(Thread[main,5,main])--UPDATE pets SET NAME = ? WHERE (ID = ?)
+	bind => [SamanthaX, 7]
+[TopLink Fine]: 2012.01.01 12:35:11.320--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.320--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.321--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.321--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [7]
+[TopLink Fine]: 2012.01.01 12:35:11.322--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.322--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (OWNER_ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.323--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, VISIT_DATE, DESCRIPTION, PET_ID FROM visits WHERE (PET_ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.323--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.324--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, BIRTH_DATE, NAME, OWNER_ID, TYPE_ID FROM pets WHERE (ID = ?)
+	bind => [8]
+[TopLink Fine]: 2012.01.01 12:35:11.324--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, ADDRESS, FIRST_NAME, CITY, TELEPHONE, LAST_NAME FROM owners WHERE (ID = ?)
+	bind => [6]
+[TopLink Fine]: 2012.01.01 12:35:11.324--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.325--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--SELECT ID, NAME FROM types WHERE (ID = ?)
+	bind => [1]
+[TopLink Fine]: 2012.01.01 12:35:11.330--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--INSERT INTO visits (VISIT_DATE, DESCRIPTION, PET_ID) VALUES (?, ?, ?)
+	bind => [2012-01-01, test, 7]
+[TopLink Fine]: 2012.01.01 12:35:11.330--ClientSession(427334294)--Connection(1022163690)--Thread(Thread[main,5,main])--CALL IDENTITY()
+------------- ---------------- ---------------
+
+Testcase: testUsageLogAspectIsInvoked took 1.295 sec
+Testcase: testBogusJpql took 0.008 sec
+Testcase: testApplicationManaged took 0.006 sec
+Testcase: testGetVets took 0.026 sec
+Testcase: testGetPetTypes took 0.005 sec
+Testcase: testFindOwners took 0.016 sec
+Testcase: testLoadOwner took 0.011 sec
+Testcase: testInsertOwner took 0.012 sec
+Testcase: testUpdateOwner took 0.008 sec
+Testcase: testLoadPet took 0.014 sec
+Testcase: testInsertPet took 0.02 sec
+Testcase: testUpdatePet took 0.011 sec
+Testcase: testInsertVisit took 0.013 sec

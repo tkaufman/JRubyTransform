@@ -5,6 +5,7 @@ java_import org.springframework.samples.petclinic.web.VisitsAtomView
 java_import org.springframework.samples.petclinic.Pet
 java_import org.springframework.samples.petclinic.PetType
 java_import org.springframework.samples.petclinic.Visit
+java_import com.sun.syndication.feed.atom.Feed
 
 Before do
   @view = VisitsAtomView.new
@@ -26,8 +27,10 @@ Given /^a visit on "([^"]*)" for "([^"]*)"$/ do |str_date, issue|
 end
 
 When /^I view the visits in Atom$/ do
-  
-
+  model = java.util.HashMap.new
+  model.put("visits", @visit)
+  @feed = Feed.new
+  @view.buildFeedMetadata(model, @feed, org.springframework.mock.web.MockHttpServletRequest.new)
 end
 
 Then /^the output should contain "([^"]*)"$/ do |arg1|
