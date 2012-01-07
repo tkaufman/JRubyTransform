@@ -1,6 +1,10 @@
 require 'buildr'
+require 'zip/zip'
 
-Dir[File.dirname(__FILE__) + '/build/*.rb'].each {|file| require file }
+CURRENT_DIR = File.dirname(__FILE__)
+
+# loading repositories, dependencies files to locate artifacts
+Dir[CURRENT_DIR + '/build/*.rb'].each {|file| require file }
 
 VERSION_NUMBER = "1.0.0"
 GROUP = "spring-petclinic"
@@ -18,5 +22,25 @@ define "spring-petclinic" do
   test.compile.with SPRING_TEST
   test.resources
   package(:war)
+
+  task :explode => :package do
+    Zip::ZipFile.open(CURRENT_DIR + "/target/spring-petclinic-1.0.0.war") do |file|
+      file.each do |f|
+        f_path = File.join("target/exploded", f.name)
+        FileUtils.mkdir_p(File.dirname(f_path))
+        begin
+          file.extract(f, f_path)
+        rescue Zip::ZipDestinationFileExistsError
+        end
+      end
+    end
+  end
+
+  task :cukes => :explode do
+    BASE=CURRENT_DIR + "/target/exploded/WEB-INF"
+    CLASSPATH = "#{BASE}/classes:#{BASE}/lib/*"
+    system "jruby -J-cp \"#{CLASSPATH}\" -S cucumber features"
+  end
+
 end
 
