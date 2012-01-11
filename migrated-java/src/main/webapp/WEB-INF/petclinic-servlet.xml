@@ -5,9 +5,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
 		xmlns:oxm="http://www.springframework.org/schema/oxm"
+		xmlns:lang="http://www.springframework.org/schema/lang"
 		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-				http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd">
+				http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd
+				http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd">
 
 	<!--
 		- The controllers are autodetected POJOs labeled with the @Controller annotation.
@@ -15,16 +17,16 @@
 	<context:component-scan base-package="org.springframework.samples.petclinic.web"/>
 
 	<!--
-		- The form-based controllers within this application provide @RequestMapping 
-		- annotations at the type level for path mapping URLs and @RequestMapping 
-		- at the method level for request type mappings (e.g., GET and POST). 
-		- In contrast, ClinicController - which is not form-based - provides 
+		- The form-based controllers within this application provide @RequestMapping
+		- annotations at the type level for path mapping URLs and @RequestMapping
+		- at the method level for request type mappings (e.g., GET and POST).
+		- In contrast, ClinicController - which is not form-based - provides
 		- @RequestMapping only at the method level for path mapping URLs.
 		-
-		- DefaultAnnotationHandlerMapping is driven by these annotations and is 
+		- DefaultAnnotationHandlerMapping is driven by these annotations and is
 		- enabled by default with Java 5+.
 	-->
-	
+
 	<!--
 		- This bean processes annotated handler methods, applying PetClinic-specific PropertyEditors
 		- for request parameter binding. It overrides the default AnnotationMethodHandlerAdapter.
@@ -36,9 +38,9 @@
 	</bean>
 
 	<!--
-		- This bean resolves specific types of exceptions to corresponding logical 
-		- view names for error views. The default behaviour of DispatcherServlet 
-		- is to propagate all exceptions to the servlet container: this will happen 
+		- This bean resolves specific types of exceptions to corresponding logical
+		- view names for error views. The default behaviour of DispatcherServlet
+		- is to propagate all exceptions to the servlet container: this will happen
 		- here with all other types of exceptions.
 	-->
 	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
@@ -62,12 +64,12 @@
 		<property name="mediaTypes">
 			<map>
 				<entry key="xml" value="#{vets.contentType}"/>
-				<entry key="atom" value="#{visits.contentType}"/>
+				<entry key="atom" value="text/xml"/>
 			</map>
 		</property>
 		<property name="order" value="0"/>
 	</bean>
-	
+
 	<!--
 		- The BeanNameViewResolver is used to pick up the visits view name (below).
 		- It has the order property set to 2, which means that this will
@@ -85,12 +87,19 @@
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/jsp/"
 			p:suffix=".jsp" p:order="2"/>
 
+  <lang:jruby id="loadPathOutputter" script-interfaces="org.springframework.beans.factory.InitializingBean" script-source="/WEB-INF/ruby/lib_outputter.rb" />
+
+
 	<!--
 		- The AtomView rendering a Atom feed of the visits
-	 -->
 	<bean id="visits" class="org.springframework.samples.petclinic.web.VisitsAtomView"/>
+	 -->
+   <lang:jruby id="visits" refresh-check-delay="3000"
+     script-source="/WEB-INF/ruby/atom_visits.rb"
+     script-interfaces="org.springframework.web.servlet.View">
+   </lang:jruby>
 
-	<bean id="vets" class="org.springframework.web.servlet.view.xml.MarshallingView">
+   	<bean id="vets" class="org.springframework.web.servlet.view.xml.MarshallingView">
 		<property name="contentType" value="application/vnd.springsource.samples.petclinic+xml"/>
 		<property name="marshaller" ref="marshaller"/>
 	</bean>

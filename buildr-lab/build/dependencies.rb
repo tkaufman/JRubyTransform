@@ -1,4 +1,7 @@
-SPRING = group('org.springframework.context', 'org.springframework.orm', 'org.springframework.oxm', 'org.springframework.web.servlet', 'org.springframework.aspects', :under => 'org.springframework', :version => '3.0.0.RELEASE')
+SPRING = group('org.springframework.context', 'org.springframework.orm', 'org.springframework.oxm',
+'org.springframework.web.servlet', 'org.springframework.aspects',
+:under => 'org.springframework',
+:version => '3.0.0.RELEASE')
 
 ASPECTJ = 'org.aspectj:com.springsource.org.aspectj.weaver:jar:1.6.8.RELEASE'
 

@@ -1,4 +1,6 @@
 require 'buildr'
+require 'buildr/jetty'
+require 'readline'
 require 'zip/zip'
 
 CURRENT_DIR = File.dirname(__FILE__)
@@ -21,6 +23,7 @@ define "spring-petclinic" do
 
   test.compile.with SPRING_TEST
   test.resources
+
   package(:war)
 
   task :explode => :package do
@@ -40,6 +43,11 @@ define "spring-petclinic" do
     BASE=CURRENT_DIR + "/target/exploded/WEB-INF"
     CLASSPATH = "#{BASE}/classes:#{BASE}/lib/*"
     system "jruby -J-cp \"#{CLASSPATH}\" -S cucumber features"
+  end
+
+  task("jetty"=>[package(:war), jetty.use]) do |task|
+    jetty.deploy("http://localhost:8080", task.prerequisites.first)
+    Readline::readline('[Type ENTER to stop Jetty]')
   end
 
 end
