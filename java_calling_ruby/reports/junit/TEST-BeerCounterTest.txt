@@ -1,0 +1,24 @@
+Testsuite: BeerCounterTest
+Tests run: 2, Failures: 1, Errors: 0, Time elapsed: 2.462 sec
+------------- Standard Error -----------------
+Jan 11, 2012 12:01:33 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@e60e128: startup date [Wed Jan 11 12:01:33 EST 2012]; root of context hierarchy
+Jan 11, 2012 12:01:33 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
+Jan 11, 2012 12:01:34 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63cd66ea: defining beans [messageHandler,beerCounter,org.springframework.scripting.config.scriptFactoryPostProcessor,rubyBeerCounter,rubyHandler]; root of factory hierarchy
+Jan 11, 2012 12:01:35 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6001ef4b: startup date [Wed Jan 11 12:01:35 EST 2012]; root of context hierarchy
+Jan 11, 2012 12:01:35 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [applicationContext.xml]
+Jan 11, 2012 12:01:36 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7ddc6a9d: defining beans [messageHandler,beerCounter,org.springframework.scripting.config.scriptFactoryPostProcessor,rubyBeerCounter,rubyHandler]; root of factory hierarchy
+------------- ---------------- ---------------
+
+Testcase: testJavaConfiguration took 2.117 sec
+Testcase: testRubyConfiguration took 0.296 sec
+	FAILED
+expected:<1> but was:<2>
+junit.framework.AssertionFailedError: expected:<1> but was:<2>
+	at BeerCounterTest.testRubyConfiguration(BeerCounterTest.java:25)
+

@@ -1,0 +1,8 @@
+Testsuite: MessageHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.481 sec
+------------- Standard Output ---------------
+The rubies received Message: Stuff
+------------- ---------------- ---------------
+
+Testcase: testJavaConfiguration took 0.237 sec
+Testcase: testRubyConfiguration took 0.241 sec

@@ -1,0 +1,24 @@
+desc "Simple Spring App"
+define "spring-app" do
+  project.version = "1.0.0"
+  project.group = "org.codemash"
+  manifest["Implementation-Vendor"] = "Codemash"
+
+  repositories.remote << "http://repo.springsource.org/release"
+  repositories.remote << "http://repo1.maven.org/maven2"
+  repositories.remote << "http://www.ibiblio.org/maven2/"
+
+  SPRING_CONTEXT = 'org.springframework:org.springframework.context:jar:3.0.0.RELEASE'
+  COMMONS_LOGGING = 'commons-logging:commons-logging:jar:1.1.1'
+  JRUBY = 'org.jruby:jruby:jar:1.6.5'
+
+  compile.with transitive(SPRING_CONTEXT, COMMONS_LOGGING, JRUBY)
+  resources
+
+  test.compile
+  test.resources
+
+  package(:jar)
+
+end
+
