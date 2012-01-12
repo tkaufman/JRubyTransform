@@ -1,7 +1,7 @@
 require 'watir-webdriver'
 
 Before do
-  @browser = Watir::Browser.new :chrome
+  @browser = Watir::Browser.new :ff
 end
 
 Given /^I am on the vets page$/ do

@@ -1,0 +1,16 @@
+task :default => :unit_test
+
+desc "Compile the source"
+task :compile do
+  src = 'com/testdouble/RomanNumeral.java'
+  target = 'com/testdouble/RomanNumeral.class'
+  unless uptodate?(target, src)
+    sh "javac #{src}"
+  end
+end
+
+desc "Test the source"
+task :unit_test => :compile do
+  sh 'rspec roman_numeral_spec.rb'
+end
+

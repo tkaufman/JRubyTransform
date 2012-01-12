@@ -26,25 +26,6 @@ define "spring-petclinic" do
 
   package(:war)
 
-  task :explode => :package do
-    Zip::ZipFile.open(CURRENT_DIR + "/target/spring-petclinic-1.0.0.war") do |file|
-      file.each do |f|
-        f_path = File.join("target/exploded", f.name)
-        FileUtils.mkdir_p(File.dirname(f_path))
-        begin
-          file.extract(f, f_path)
-        rescue Zip::ZipDestinationFileExistsError
-        end
-      end
-    end
-  end
-
-  task :cukes => :explode do
-    BASE=CURRENT_DIR + "/target/exploded/WEB-INF"
-    CLASSPATH = "#{BASE}/classes:#{BASE}/lib/*"
-    system "jruby -J-cp \"#{CLASSPATH}\" -S cucumber features"
-  end
-
   task("jetty"=>[package(:war), jetty.use]) do |task|
     jetty.deploy("http://localhost:8080", task.prerequisites.first)
     Readline::readline('[Type ENTER to stop Jetty]')

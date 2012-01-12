@@ -3,7 +3,7 @@ require 'watir-webdriver'
 describe 'Spring PetClinic Owners' do
   before(:all) do
     @browser = Watir::Browser.new :chrome
-  end  
+  end
 
   describe '(adding)' do
     before(:each) do
@@ -34,22 +34,22 @@ describe 'Spring PetClinic Owners' do
     before(:each) do
       @browser.goto "http://localhost:8080/org.springframework.samples.petclinic/owners/search"
     end
-    
+
     it 'should find by last name' do
       @browser.text_field(:id => 'lastName').set("Franklin")
       @browser.button(:value => 'Find Owners').click
       @browser.text().should include("George Franklin")
     end
-    
+
     it 'should find by partial name' do
       @browser.text_field(:id => 'lastName').set("Fran")
       @browser.button(:value => 'Find Owners').click
-      @browser.text().should include("George Franklin")      
+      @browser.text().should include("George Franklin")
     end
-    
-    it 'should find all when nothing is supplid' do
+
+    it 'should find all when nothing is supplied' do
       @browser.button(:value => 'Find Owners').click
-      @browser.text().should include("George Franklin")      
+      @browser.text().should include("George Franklin")
     end
   end
 
